@@ -1,0 +1,110 @@
+body {
+  background-color: #eee8e0;
+  margin: 0;
+  font-family: dela gothic one;
+}
+
+h1 {
+    color: #ffcb05;
+  -webkit-text-stroke: 1px #3c5aa6;
+}
+
+.card {
+  list-style: none;
+  padding: 40px;
+  background-color: #ea6c6c;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translate(0, -1rem);
+  filter: saturate(120%);
+  box-shadow: 0 1rem rgb(175, 92, 92);
+  cursor: pointer;
+}
+
+.card:active {
+  transform: translate(0, -0.1rem);
+  box-shadow: 0 0.1rem rgb(175, 92, 92);
+}
+
+.card-title {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: normal;
+  margin-bottom: 0;
+  color: #ffcb05;
+  -webkit-text-stroke: 1px #3c5aa6;
+}
+
+.card-subtitle {
+  font-weight: lighter;
+  margin-top: 5px;
+  color: #393535;
+}
+
+.card-image {
+  height: 180px;
+}
+
+#pokedex {
+  padding-inline-start: 0%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 20px;
+}
+
+.container {
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.search-container {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+}
+
+#results {
+    max-width: 600px;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: #eee8e0;
+  opacity: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#closeBtn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+button {
+  background-color: #ea6c6c;
+  padding: 10px 20px;
+  color: #eee8e0;
+  border: none;
+  border-radius: 6px;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem rgb(175, 92, 92);
+  color: #393535;
+}
+
+button:active {
+  transform: translate(0, 0.3rem);
+  box-shadow: 0 0.1rem rgb(175, 92, 92);
+}
